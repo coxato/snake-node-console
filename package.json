@@ -1,0 +1,18 @@
+{
+  "name": "snake-nodejs",
+  "version": "1.0.0",
+  "description": "snake game in nodejs console",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "snake",
+    "game",
+    "node",
+    "console"
+  ],
+  "author": "carlosEdua",
+  "license": "MIT"
+}
