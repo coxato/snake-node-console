@@ -14,7 +14,7 @@ class Snake{
 
     
     initHead(iPos, jPos){
-        !this.snakeBodyParts.length && this.snakeBodyParts.push( new SnakePart(iPos, jPos) )
+        !this.snakeBodyParts.length && this.snakeBodyParts.push( new SnakePart(iPos, jPos, '@') )
     }
 
 
