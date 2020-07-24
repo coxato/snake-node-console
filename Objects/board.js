@@ -4,11 +4,11 @@ class Board{
         this.collumns = collumns;
         this.char = char;
         this.board = null;
-        this.make();
+        this._make();
     }
 
     // make board
-    make(){
+    _make(){
         const { rows, collumns, char } = this;
         const board = [];
         let i = 0, j = 0;

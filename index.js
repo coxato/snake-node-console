@@ -1,21 +1,5 @@
-import Snake from './Objects/snake.js';
-import Board from './Objects/board.js';
+import GameController from './Objects/gameController.js';
 
-const c = console.log;
+const game = new GameController();
 
-// init
-const rows = 7;
-const collumns = 10;
-
-const board = new Board(rows, collumns);
-const snake = new Snake(0, 0, 'right');
-
-
-board.firstPrint(snake);
-
-setTimeout(() => {
-    snake.update(0, 1)
-    board.update(snake);
-    
-    // c(board.board)
-}, 2000)
+game.play();

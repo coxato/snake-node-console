@@ -47,9 +47,9 @@ class Snake{
         
         this.saveOldQueuePosition();
 
-        // first update rest of parts, except head
+        // first update rest of parts from queue, except head
         if(length >= 2){
-            for(let i = 1; i < length; i++){
+            for(let i = length - 1; i > 0; i--){
                 // prev body part position
                 let { iPos, jPos } = snakeBodyParts[i-1];
                 snakeBodyParts[i].updatePos(iPos, jPos);
@@ -64,6 +64,13 @@ class Snake{
     // getters and setters
     get length(){
         return this.snakeBodyParts.length;
+    }
+
+    get headPosition(){
+        return {
+            iPos: this.snakeBodyParts[0].iPos,
+            jPos: this.snakeBodyParts[0].jPos,
+        }
     }
 
 
